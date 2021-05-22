@@ -4,9 +4,13 @@ PATH=os.path.abspath('')
 sys.path.append(PATH)
 from apscheduler.schedulers.blocking import BlockingScheduler
 import main
-sched = BlockingScheduler(timezone="UTC")
-@sched.scheduled_job('interval',
-                     minutes=60)
-def exe():
+scheduler = BlockingScheduler()
+@scheduler.scheduled_job('interval', minutes=60)
+def timer():
+    print('uncode')
     main.run()
-sched.start()  
+try:
+    timer()
+    scheduler.start() 
+except KeyboardInterrupt:
+    exit() 
