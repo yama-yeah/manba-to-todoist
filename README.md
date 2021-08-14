@@ -1,4 +1,4 @@
-# manba-to-todoist
+# manba-to-todoist 凍結
 たつお先輩のapiを改造してazure用にしたものを使っています  
 必ずhomeworkというプロジェクトをtodoistで作成しておいてください  
 最初にmanabaのuserid,passwordとtodoistのapitokenの入力を求められます  
